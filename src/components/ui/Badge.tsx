@@ -14,7 +14,7 @@ const Badge = ({
 
     return (
         <div
-            className={`${styles[variant]} h-[25px] font-inter font-bold text-xs uppercase tracking-[1.2px] leading-tight inline-flex items-center justify-center rounded-full
+            className={`${styles[variant]} h-[25px] font-inter font-bold text-xs p-[12px] uppercase tracking-[1.2px] leading-tight inline-flex items-center justify-center rounded-full
                     gap-2 ${className}`}
         >
             {icon && <span className="flex items-center justify-center w-5 h-5">{icon}</span>}
