@@ -11,6 +11,13 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   variant?: "contained" | "outline" | "customize_1" | "customize_2";
 }
 
+export interface BadgeProps {
+  text?: string;
+  icon?: ReactNode;
+  className?: string;
+  variant?: "contained" | "outline";
+}
+
 export interface LabelProps {
   text?: string;
   htmlFor?: string;

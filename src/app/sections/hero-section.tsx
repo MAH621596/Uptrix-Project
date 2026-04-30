@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Button from '@/components/ui/Button';
+import { Button, Badge } from '@/components/ui';
 import { container, item } from "@/lib/motion";
 import { HeroSectionImg } from "@/components/png";
 
@@ -19,6 +19,7 @@ const HeroSection = () => {
 
                 {/* Left Side */}
                 <div className="w-full text-center lg:text-left">
+                    <Badge text="Powerful Capabilities" variant="outline" className="mb-[25px]" />
 
                     <motion.h1
                         variants={item}
