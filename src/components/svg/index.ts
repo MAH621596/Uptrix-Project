@@ -1,0 +1,10 @@
+export { default as UptimeSvg } from "./Uptime";
+export { default as RegionSvg } from "./Region";
+export { default as ProtocolSvg } from "./Protocol";
+export { default as IntegritySvg } from "./Integrity";
+export { default as ComparisonSvg } from "./Comparison";
+export { default as LatenciesSvg } from "./Latencies";
+export { default as TrendsSvg } from "./Trends";
+export { default as CheckMarkSvg } from "./CheckMark";
+export { default as AnalyticsApiSvg } from "./ApiAnalytics";
+export { default as CheckboxIcon } from "./CheckBoxIcon";

@@ -1,0 +1,50 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+@import "tailwindcss";
+
+:root {
+    --background: #10221C;
+    --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #10221C;
+    --foreground: #ffffff;
+  }
+}
+
+.font-inter {
+  font-family: var(--font-Inter), sans-serif;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-Inter), sans-serif;
+}
+
+.custom-otp-wrap input {
+  width: 53px !important;
+  height: 56px !important;
+}
+
+@media (max-width: 550px) {
+  .custom-otp-wrap input {
+    width: 38px !important;
+    height: 38px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .custom-otp-wrap input {
+    width: 34px !important;
+    height: 34px !important;
+  }
+}
