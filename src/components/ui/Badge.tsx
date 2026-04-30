@@ -8,7 +8,7 @@ const Badge = ({
 }: BadgeProps) => {
 
     const styles = {
-        contained: "bg-[#10B77F] text-[#10221C] border",
+        contained: "bg-[#10B77F] text-[#10221C] border border-[#10B77F]",
         outline: "bg-[#10B77F1A] text-[#10B77F] border border-[#10B77F33]",
     };
 
