@@ -1,4 +1,4 @@
-const BASE_URL = process.env.HOSTED_API_URL || process.env.LOCAL_API_URL;
+const BASE_URL = process.env.NEXT_PUBLIC_HOSTED_API_URL || process.env.NEXT_PUBLIC_LOCAL_API_URL;
 
 export const api = {
   login: async (data: any) => { 
