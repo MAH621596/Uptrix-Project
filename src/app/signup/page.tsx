@@ -156,7 +156,7 @@ const SignUp = ({ setLoggedIn }: any) => {
                          disabled={loading}
                         className={`mt-2 rounded-[8px] w-full flex justify-center 
                     !bg-[#10B77F] border-[#10B77F] 
-                    font-bold text-sm lg:text-base leading-[24px] !text-[#10221C] h-[56px] 
+                    font-bold text-base leading-[24px] !text-[#10221C] h-[56px] 
                     hover:scale-90 ${loading ? "opacity-[0.6]" : "opacity-[1]"}`} />
 
                     <div className="border-t border-[#10B77F1A] w-full flex flex-col sm:flex-row items-center justify-center gap-2 pb-0 pt-6 md:pt-8 lg:pt-[32px] px-0">

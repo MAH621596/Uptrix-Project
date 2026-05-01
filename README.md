@@ -47,6 +47,17 @@ app.use(
     credentials: true,              
   })
 );
+
+Inside AuthController
+  res.cookie("token", token, {
+      httpOnly: true,
+      secure: false, // for localhost
+      sameSite: "lax",
+  });
+
+Inside .env file
+MONGO_URI=mongodb://127.0.0.1:27017/uptrix
+
 Login authentication using JWT
 HTTP-only cookie session management
 Protected session check (/me route)

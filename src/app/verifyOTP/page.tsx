@@ -131,7 +131,7 @@ const VerifyOTP = ({ setLoggedIn }: any) => {
                         icon={<Image src={Direct} alt="img" />}
                         className="shadow-[0_10px_15px_-3px_rgba(16,183,127,0.2)] mt-2 rounded-[8px] w-full flex justify-center 
                     !bg-[#10B77F] border-[#10B77F] 
-                    font-bold text-xs lg:text-base leading-[24px] !text-white h-[56px] 
+                    font-bold text-base leading-[24px] !text-white h-[56px] 
                     hover:scale-90" />
 
                     <div className="border-t border-[#10B77F1A] w-full flex flex-col sm:flex-row items-center justify-center gap-2 pb-0 pt-6 md:pt-8 lg:pt-[32px] px-0">

@@ -92,7 +92,7 @@ const ForgotPwd = ({ setLoggedIn }: any) => {
                         icon={<Image src={DirectNew} alt="img" />}
                         className="shadow-[0_10px_15px_-3px_rgba(16,183,127,0.2)] mt-2 rounded-[8px] w-full flex justify-center 
                     !bg-[#10B77F] border-[#10B77F] 
-                    font-bold text-xs lg:text-base leading-[24px] !text-[#10221C] h-[56px] 
+                    font-bold text-base leading-[24px] !text-[#10221C] h-[56px] 
                     hover:scale-90" />
 
                     <Link href="/login" className="mt-[32px] flex flex-col sm:flex-row items-center justify-center gap-2">
