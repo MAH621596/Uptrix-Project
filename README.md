@@ -43,10 +43,14 @@ import cors from "cors";
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
-    credentials: true,              
+    origin: [
+      "http://localhost:3000",
+      "https://next-js-cc73f.web.app"
+    ], // frontend URL
+    credentials: true, // IMPORTANT
   })
 );
+
 
 Inside AuthController
   res.cookie("token", token, {

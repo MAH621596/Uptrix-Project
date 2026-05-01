@@ -1,8 +1,8 @@
-const BASE_URL = "http://localhost:5000/api/v1"; // current backend URL
+const BASE_URL = process.env.HOSTED_API_URL || process.env.LOCAL_API_URL;
 
 export const api = {
-  login: async (data: any) => {
-    const res = await fetch(`${BASE_URL}/auth/login`, {
+  login: async (data: any) => { 
+    const res = await fetch(`${BASE_URL}/api/v1/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
@@ -12,7 +12,7 @@ export const api = {
   },
   
   register: async (data: any) => {
-    const res = await fetch(`${BASE_URL}/auth/register`, {
+    const res = await fetch(`${BASE_URL}/api/v1/auth/register`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
@@ -22,7 +22,7 @@ export const api = {
   },
 
   logout: async () => {
-    const res = await fetch(`${BASE_URL}/auth/logout`, {
+    const res = await fetch(`${BASE_URL}/api/v1/auth/logout`, {
       method: "POST",
       credentials: "include",
     });
@@ -30,7 +30,7 @@ export const api = {
   },
 
   me: async () => {
-    const res = await fetch(`${BASE_URL}/auth/me`, {
+    const res = await fetch(`${BASE_URL}/api/v1/auth/me`, {
       method: "GET",
       credentials: "include", 
     });
