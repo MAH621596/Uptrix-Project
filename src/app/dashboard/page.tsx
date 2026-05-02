@@ -7,14 +7,26 @@ import { HeroSectionImg } from "@/components/png";
 import SectionReveal from '@/components/SectionReveal'
 import ProtectedRoute from "@/components/ProtectedRoute";
 import { AnalyticsSection, PrecisionSection, } from "../sections";
+import { dashboardCardsData } from "@/helper/data";
+import { MonitoringCard } from "@/components/ui/Card";
 
 export default function Page() {
   return (
     <ProtectedRoute>
-      <div className="max-w-7xl mx-auto w-full py-10 p-5 md:p-12 lg:p-[80px] mt-[150px] flex flex-col lg:flex:row items-start gap-8">
-        <SectionReveal>
-          <h2 className="text-3xl md:text-5xl font-bold">Dashboard</h2>
-        </SectionReveal>
+      <div className="max-w-7xl mx-auto w-full py-10 p-5 md:p-12 lg:p-[20px] mt-[100px] lg:mt-[150px] flex flex-col lg:flex:row items-start gap-8">
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px] mb-[120px]">
+            {dashboardCardsData.map((card, i) => (
+                <div key={i}>
+                    <MonitoringCard
+                        icon={card.icon}
+                        subcategory={card.subcategory}
+                        description={card.description}
+                        className="hover:scale-110"
+                    />
+                </div>
+            ))}
+        </div>
 
         <SectionReveal>
           <div className="grid md:grid-cols-2 gap-8">

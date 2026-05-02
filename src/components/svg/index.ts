@@ -8,3 +8,4 @@ export { default as TrendsSvg } from "./Trends";
 export { default as CheckMarkSvg } from "./CheckMark";
 export { default as AnalyticsApiSvg } from "./ApiAnalytics";
 export { default as CheckboxIcon } from "./CheckBoxIcon";
+export { default as Spinner } from "./Spinner";

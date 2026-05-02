@@ -77,6 +77,45 @@ export const monitoringCardsData = [
     },
 ];
 
+export const dashboardCardsData = [
+    {
+        id: 1,
+        icon: <RegionSvg className="fill-current text-[#10B77F] group-hover:scale-110" />,
+        subcategory: "Multi-Region Verification",
+        description: "If a service goes down, we verify from 3+ independent regions to eliminate false positives."
+    },
+    {
+        id: 2,
+        icon: <IntegritySvg className="fill-current text-[#10B77F] group-hover:scale-110" />,
+        subcategory: "SSL/TLS Integrity",
+        description: "Continuous certificate chain checks. Get notified 30, 15, and 7 days before expiry."
+    },
+    {
+        id: 3,
+        icon: <ProtocolSvg className="fill-current text-[#10B77F] group-hover:scale-110" />,
+        subcategory: "Custom Protocols",
+        description: "Full support for HTTP/S, TCP, UDP, ICMP Ping, DNS, and custom SMTP/IMAP checks."
+    },
+        {
+        id: 4,
+        icon: <TrendsSvg className="fill-current text-[#10B77F] group-hover:scale-110" />,
+        subcategory: "Uptime Trends",
+        description: "Calculate SLAs effortlessly with weekly/monthly uptime percentages down to 4 decimal places."
+    },
+    {
+        id: 5,
+        icon: <LatenciesSvg className="fill-current text-[#10B77F] group-hover:scale-110" />,
+        subcategory: "Latencies Map",
+        description: "Visualize response times globally. Identify which geographical regions are suffering from lag."
+    },
+    {
+        id: 6,
+        icon: <ComparisonSvg className="fill-current text-[#10B77F] group-hover:scale-110" />,
+        subcategory: "Baseline Comparison",
+        description: "Compare current performance against historical baselines to detect degradation."
+    },
+];
+
 export const analyticsCardsData = [
     {
         id: 1,

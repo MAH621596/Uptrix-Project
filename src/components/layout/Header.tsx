@@ -58,9 +58,15 @@ export const Header = ({
 
       {user ? (
         <div className="xl:pl-[32px] hidden xl:block">
-        <Button variant="contained" type="button" text="Log Out" post={true}
-          onClick={handleLogout} className="px-[16px] py-[10px] text-sm/5 capitalize" />
-          </div>
+          <Link
+            href="/dashboard"
+            className="xl:mr-[32px] transition-colors inline-flex items-center justify-center font-inter font-medium text-sm/5 text-[#CBD5E1] capitalize hover:text-[#10B77F] hover:font-boldd"
+          >
+            Dashboard
+          </Link>
+          <Button variant="contained" type="button" text="Log Out" post={true}
+            onClick={handleLogout} className="px-[16px] py-[10px] text-sm/5 capitalize" />
+        </div>
       ) : (
         <>
           {/* Desktop CTA */}
@@ -119,30 +125,38 @@ export const Header = ({
         ))}
 
         {user ? (
-          <Link
-            href="/logout"
-            onClick={handleLogout}
-            className="text-[#10B77F]/70 hover:text-[#10B77F] font-semibold font-inter text-base uppercase tracking-wider transition"
-          >
-            Log Out
-          </Link>
+          <>
+            <Link
+              href="/dashboard"
+              className="text-[#10B77F]/70 hover:text-[#10B77F] font-semibold font-inter text-base uppercase tracking-wider transition"
+            >
+              Dashboard
+            </Link>
+            <Link
+              href="/logout"
+              onClick={handleLogout}
+              className="text-[#10B77F]/70 hover:text-[#10B77F] font-semibold font-inter text-base uppercase tracking-wider transition"
+            >
+              Log Out
+            </Link>
+          </>
         ) : (
           <>
-           <Link
-            href="/signup"
-            onClick={() => setOpen(false)}
-            className="text-[#10B77F]/70 hover:text-[#10B77F] font-semibold font-inter text-base uppercase tracking-wider transition"
-          >
-            Sign Up
-          </Link>
+            <Link
+              href="/signup"
+              onClick={() => setOpen(false)}
+              className="text-[#10B77F]/70 hover:text-[#10B77F] font-semibold font-inter text-base uppercase tracking-wider transition"
+            >
+              Sign Up
+            </Link>
 
-           <Link
-            href="/login"
-            onClick={() => setOpen(false)}
-            className="text-[#10B77F]/70 hover:text-[#10B77F] font-semibold font-inter text-base uppercase tracking-wider transition"
-          >
-            Login
-          </Link>
+            <Link
+              href="/login"
+              onClick={() => setOpen(false)}
+              className="text-[#10B77F]/70 hover:text-[#10B77F] font-semibold font-inter text-base uppercase tracking-wider transition"
+            >
+              Login
+            </Link>
           </>
         )}
       </div>
